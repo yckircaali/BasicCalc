@@ -1,40 +1,39 @@
+Def Add (x, y):
+     return x + y
 
-def Toplama(x, y):
-    return x + y
+Def Subtraction (x, y):
+     return x - y
 
-def Cikarma(x, y):
-    return x - y
+def Carpma (x, y):
+     return x * y
 
-def Carpma(x, y):
-    return x * y
+def Bolme (x, y):
+     return x / y
 
-def Bolme(x, y):
-    return x / y
+print ("Please choose what you want to do.")
+print ( "0.Topl") from
+print ( "1.Çıkar Up")
+print ( "2.Çarp Up")
+print ( "Chapter 3 on")
 
-print("Lutfen yapmak istediginiz islemi seciniz.")
-print("0.Toplama")
-print("1.Çıkarma")
-print("2.Çarpma")
-print("3.Bölme")
+islem = input ("Enter your selection:")
 
-islem = input("Seciminizi giriniz:")
+s1 = int (input ("Number 1:"))
+s2 = int (input ("2nd Issue:"))
 
-s1 = int(input("1. Sayı: "))
-s2 = int(input("2. Sayı: "))
+if action == '0':
+     print (s1, "+", s2, "=", Addition (s1, s2))
 
-if islem == '0':
-    print(s1, "+", s2, "=", Toplama(s1, s2))
+if action == '1':
+     print (s1, "-", s2, "=", Subtraction (s1, s2))
 
-if islem == '1':
-    print(s1, "-", s2, "=", Cikarma(s1, s2))
+if action == '2':
+     print (s1, "*", s2, "=", Carpma (s1, s2))
 
-if islem == '2':
-    print(s1, "*", s2, "=", Carpma(s1, s2))
-
-if islem == '3':
-   try:
-    print(s1, "/", s2, "=", Bolme(s1, s2))
-   except ZeroDivisionError:
-      print("Herhangi bir sayi 0'a bolunemez!")
+if action == '3':
+    try:
+     print (s1, "/", s2, "=", Bolme (s1, s2))
+    except ZeroDivisionError:
+       print ("No number can be divided by 0!")
 else:
-    print("Geçersiz Giriş")
+     print ("Invalid Login")
